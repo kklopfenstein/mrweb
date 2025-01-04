@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: mrweb
-        image: mrweb:latest
+        image: kklopfenstein/mrweb:v0
         ports:
         - containerPort: 80
