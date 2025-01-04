@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: mrweb
-        image: your-docker-image:latest
+        image: mrweb:latest
         ports:
         - containerPort: 80
