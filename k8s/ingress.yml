@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mrweb-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/mrweb-target: /
+spec:
+  rules:
+  - host: mrserver.net
+    http:
+      paths:
+      - path: /api
+        pathType: Prefix
+        backend:
+          service:
+            name: mrweb-service
+            port:
+              number: 80
