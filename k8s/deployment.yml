@@ -18,4 +18,4 @@ spec:
       - name: mrweb
         image: kklopfenstein/mrweb:v0
         ports:
-        - containerPort: 80
+        - containerPort: 8080

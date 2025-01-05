@@ -6,8 +6,7 @@ metadata:
     nginx.ingress.kubernetes.io/mrweb-target: /
 spec:
   rules:
-  - host: mrserver.net
-    http:
+  - http:
       paths:
       - path: /api
         pathType: Prefix
@@ -15,4 +14,4 @@ spec:
           service:
             name: mrweb-service
             port:
-              number: 80
+              number: 8081
